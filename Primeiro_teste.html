@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+
+
+<script>
+    //function pulaLinha(){
+        //document.write("<br>");
+    //}
+    //function mostra(frase) {
+        //document.write(frase);
+        //pulaLinha();
+    //}
+    //var idadeDela = 24;
+    //var minhaIdade = 20;
+    //var idade = idadeDela - minhaIdade;
+    //mostra("Nossa diferença de idade é " + idade + " anos");
+
+    //pulaLinha();
+
+    //mostra("Ela tem " + idadeDela + " e eu tenho " + minhaIdade);
+
+
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    //var anoPort = 1500;
+    //var anoAtual = 2022;
+    //var diferenca = (anoAtual - anoPort)/28;
+
+    //mostra("De " + anoPort + " até " + anoAtual + " se passaram " + Math.round(diferenca) + " Gerações");
+    //pulaLinha();
+
+    //function calculaImc(altura, peso){
+        //return peso / (altura * altura);
+    //}
+    //var nome = prompt("Informe o seu nome");
+    //var alturaInformada = prompt(nome + ", informe sua altura");
+    //var pesoInformado = prompt(nome + ", informe seu peso");
+    //var imc = calculaImc(alturaInformada, pesoInformado);
+
+    //document.write(nome + ", o seu imc é " + imc);
+
+    var vitorias = parseInt(prompt("Digite o número de vitórias"));
+    var empates = parseInt(prompt("Digite o número de empates"))
+    var pontos = (vitorias * 3) + empates;
+
+    mostra("Os pontos do seu time é " + pontos);
+
+    if(pontos > 28){
+        mostra("Seu time está melhor que o ano passado");
+    }
+    if(pontos < 28){
+        mostra("Seu time está pior que o ano passado");
+    }
+    if(pontos == 28){
+        mostra("Seu time esta igual ano passado");
+    }
+</script>
